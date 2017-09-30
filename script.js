@@ -4,7 +4,7 @@
 function createForm() {
     var form = document.createElement("form");
     document.querySelector('#wrap-form').appendChild(form);
-    form.setAttribute("action", "google.com");
+    form.setAttribute("action", "https://www.google.ru/");
     form.setAttribute("name", "login");
     form.setAttribute("onsubmit", "return validateForm()");
 
@@ -115,7 +115,7 @@ function validateForm() {
 
     if (user && age && date) {
         alert("Your form is valid!");
-        return false;
+        return true;
     }
     else {
         return false;
